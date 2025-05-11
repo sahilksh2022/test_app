@@ -4,7 +4,7 @@
 #EXPOSE 8080
 #ENTRYPOINT ["java", "-jar", "/app.jar"]
 
-# Use Maven to build the app
+
 FROM maven:3.8.5-openjdk-21-slim AS build
 WORKDIR /app
 COPY pom.xml .
