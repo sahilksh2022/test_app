@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  springboot:
+
+    build: .
+    container_name: test_springboot_project
+    environment:
+      SERVER_PORT: 8080
+
+      # Remote Render DB config (your application.properties should already have these)
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dpg-d0ffgqqdbo4c73adc92g-a.oregon-postgres.render.com:5432/test_db_tbv9
+      SPRING_DATASOURCE_USERNAME: test_db_tbv9_user
+      SPRING_DATASOURCE_PASSWORD: x9HpI4R24ewCmgmI8lum5cA0VprCVr4t
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: org.hibernate.dialect.PostgreSQLDialect
+
+      # Optional: Email and cloud configs
+      EMAIL_HOST: smtp.gmail.com
+      EMAIL_PORT: 587
+      EMAIL_USERNAME: batchlcwd@gmail.com
+      EMAIL_PASSWORD: dqwxmxfvukvwhnkh
+      EMAIL_DOMAIN: batchlcwd@gmail.com
+
+      CLOUDINARY_API_KEY: 575233445171369
+      CLOUDINARY_API_SECRET: WF88TQpJyKATyZCv4o4M0dx3xEQ
+      CLOUDINARY_NAME: derpgrwbe
+
+    ports:
+      - "8082:8080"
