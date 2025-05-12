@@ -9,9 +9,9 @@ services:
       SERVER_PORT: 8080
 
       # Remote Render DB config (your application.properties should already have these)
-      SPRING_DATASOURCE_URL: jdbc:postgresql://dpg-d0ffgqqdbo4c73adc92g-a.oregon-postgres.render.com:5432/test_db_tbv9
-      SPRING_DATASOURCE_USERNAME: test_db_tbv9_user
-      SPRING_DATASOURCE_PASSWORD: x9HpI4R24ewCmgmI8lum5cA0VprCVr4t
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dpg-d0go0vadbo4c73bio01g-a.oregon-postgres.render.com:5432/testdb_f2fu
+      SPRING_DATASOURCE_USERNAME: testdb_f2fu_user
+      SPRING_DATASOURCE_PASSWORD: XwkiEGTe6pxvTEI2PgpUFZftJ9l9e6d5
       SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.postgresql.Driver
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_JPA_SHOW_SQL: "true"
